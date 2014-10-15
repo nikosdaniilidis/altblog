@@ -12,3 +12,12 @@ categories: jekyll update
 ### and the link below should make a pdf pop up
 
 [pdf here]({{ site.url }}/assets/all-pdf/Daniilidis2014-surface-noise.pdf)
+
+* Tested:
+		baseurl: "/altblog" 
+		url: "http://nikosdaniilidis/github.io/altblog"
+		![blabbing physicist]({{ site.url }}/assets/2014-10-02-Life-in-vacuum/smbphysicist2.png)
+		[pdf here]({{ site.url }}/assets/all-pdf/Daniilidis2014-surface-noise.pdf)
+==>
+
+

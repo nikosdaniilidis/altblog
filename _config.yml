@@ -7,8 +7,10 @@ title: Nikos Daniilidis
 email: nikos.daniilidis@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   A blog about science, technology, society, and everything in-between.
-baseurl: "/altblog" # the subpath of your site, e.g. /blog/
-url: "http://www.nikosdaniilidis/github.io/altblog" # the base hostname & protocol for your site http://www.ndnl.me/blog
+
+baseurl: "/altblog" 
+url: "http://nikosdaniilidis/github.io/altblog"
+
 twitter_username: ndaniilidis
 github_username:  nikosdaniilidis
 linked_in: https://www.linkedin.com/in/ndaniilidis
