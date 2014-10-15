@@ -7,29 +7,64 @@ categories: jekyll update
 
 ### You should see an image here:
 
-![blabbing physicist]({{ site.url }}/assets/2014-10-02-Life-in-vacuum/smbphysicist2.png)
+![blabbing physicist]({{ site.url }}{{post.url}}/assets/2014-10-02-Life-in-vacuum/smbphysicist2.png)
 
 ### and the link below should make a pdf pop up
 
-[pdf here]({{ site.url }}/assets/all-pdf/Daniilidis2014-surface-noise.pdf)
+[pdf here]({{ site.url }}{{post.url}}/assets/all-pdf/Daniilidis2014-surface-noise.pdf)
 
-* Tested:
+#### * Tested "base case":
+
+In `_config.yml`
 
 `baseurl: "/altblog"`
+
 `url: "http://nikosdaniilidis/github.io/altblog"`
+
+In `_posts/some-post`
+
 `![blabbing physicist]({{ site.url }}/assets/2014-10-02-Life-in-vacuum/smbphysicist2.png)`
+
 `[pdf here]({{ site.url }}/assets/all-pdf/Daniilidis2014-surface-noise.pdf)`
+
+* Result:
 
 ==> `http://nikosdaniilidis/github.io/altblog/assets/all-pdf/Daniilidis2014-surface-noise.pdf`
 
-* Tested: 
+#### * Tested "case 1": 
+
+In `_config.yml`
 
 `baseurl: "/altblog"`
+
 `url: "http://nikosdaniilidis/github.io"`
+
+In `_posts/some-post`
+
 `![blabbing physicist]({{ site.baseurl }}/assets/2014-10-02-Life-in-vacuum/smbphysicist2.png)`
+
 `[pdf here]({{ site.baseurl }}/assets/all-pdf/Daniilidis2014-surface-noise.pdf)`
 
-==> 
+* Result:
 
+==> `http://nikosdaniilidis/github.io/assets/all-pdf/Daniilidis2014-surface-noise.pdf`
+
+#### * Tested "case 2": 
+
+In `_config.yml`
+
+`baseurl: "/altblog"`
+
+`url: "http://nikosdaniilidis/github.io"`
+
+In `_posts/some-post`
+
+`![blabbing physicist]({{ site.baseurl }}{{post.url}}/assets/2014-10-02-Life-in-vacuum/smbphysicist2.png)`
+
+`[pdf here]({{ site.baseurl }}{{post.url}}/assets/all-pdf/Daniilidis2014-surface-noise.pdf)`
+
+* Result:
+
+==> 
 
 
