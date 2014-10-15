@@ -27,7 +27,7 @@ In `_posts/some-post`
 
 `[pdf here]({{ site.url }}/assets/all-pdf/Daniilidis2014-surface-noise.pdf)`
 
-* Result:
+* Result (not working):
 
 ==> `http://nikosdaniilidis/github.io/altblog/assets/all-pdf/Daniilidis2014-surface-noise.pdf`
 
@@ -45,7 +45,7 @@ In `_posts/some-post`
 
 `[pdf here]({{ site.baseurl }}/assets/all-pdf/Daniilidis2014-surface-noise.pdf)`
 
-* Result:
+* Result (not working):
 
 ==> `http://nikosdaniilidis/github.io/assets/all-pdf/Daniilidis2014-surface-noise.pdf`
 
@@ -63,8 +63,8 @@ In `_posts/some-post`
 
 `[pdf here]({{ site.baseurl }}{{post.url}}/assets/all-pdf/Daniilidis2014-surface-noise.pdf)`
 
-* Result:
+* Result (not working):
 
-==> 
+==> `http://nikosdaniilidis/github.io/assets/all-pdf/Daniilidis2014-surface-noise.pdf`
 
 
