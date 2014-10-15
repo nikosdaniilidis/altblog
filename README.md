@@ -1,15 +1,15 @@
 ##  This the repository for my blog.
 
-Instead of writing about life in general, I will use the README to give an outline of how to arrive at a result similar to mine. 
+I will use the README to give an outline of how to arrive at a result similar to mine. 
 
 ### Set up a github pages project page:
 
 Following [this](http://www.thinkful.com/learn/a-guide-to-using-github-pages/start/new-project/project-page/) gh-pages tutorial
 
-* Create repo, and initialize with README (e.g. create `/github.com/nikos-daniilidis/blog`)
+* Create repo, and initialize with README (e.g. create `/github.com/nikosdaniilidis/altblog`)
 * Clone the repository. In the root of the directory where you want your local copy to be, do: 
 
-		git clone https://github.com/nikos-daniilidis/blog.git
+		git clone https://github.com/nikosdaniilidis/altblog.git
 
 * Create an orphan gh-pages branch
 
@@ -46,18 +46,18 @@ This is one way that works ([source](http://michaelchelen.net/81fa/install-jekyl
 
 * Install bundler in your local repository: 
 
-		nikos@nikos-pseudomac:~/bin/github-pages/blog$ gem install bundler
+		nikos@nikos-pseudomac:~/bin/alt-github-pages/altblog$ gem install bundler
 
 * Install jekyll using bundle 
 
-		nikos@nikos-pseudomac:~/bin/github-pages/blog$ bundle install
+		nikos@nikos-pseudomac:~/bin/alt-github-pages/altblog$ bundle install
 
 ### After jekyll is installed, getting started
 
 
 * Start new jekyll project in the location where your local gh-pages directory is
 
-		jekyll new ~/bin/github-pages/blog/
+		jekyll new ~/bin/alt-github-pages/altblog/
 
 If a warning appears, remove all files from `/blog` and repeat (I had to remove `Gemfile, Gemfile.lock`)
 
@@ -92,17 +92,60 @@ In all contents of `_posts`, `publications`, etc. make sure `assets` path rule i
 
 That's it!
 
-### Combinations of paths in `_config.yml`
+### Broken links for `assets`
 
-| code | basseurl | url | page links | file links | broken |
-|------|----------|-----|------------|------------|--------|
-| 000  | blog | http://nikos-daniilidis.github.io | http://nikos-daniilidis.github.io/blog/blog/about/ | http://nikos-daniilidis/github.io/assets/all-pdf/daniilidis-resume.pdf | all links |
-| 001  | blog | http://nikos-daniilidis.github.io/blog | http://nikos-daniilidis.github.io/blog/blog/about/ | http://nikos-daniilidis/github.io/assets/all-pdf/daniilidis-resume.pdf |
-| 010  | blog/ | http://nikos-daniilidis.github.io |  |  |  |
-| 011  | blog/ | http://nikos-daniilidis.github.io/blog |  |  |  |
-| 100  | /blog | http://nikos-daniilidis.github.io |  |  |  |
-| 101  | /blog | http://nikos-daniilidis.github.io/blog |  | http://nikos-daniilidis/github.io/blog/assets/all-pdf/daniilidis-resume.pdf | file links |
-| 111  | /blog/ | http://nikos-daniilidis.github.io/blog |  |  | file links |
+#### * Tested "base case":
 
+In `_config.yml`
+
+`baseurl: "/altblog"`
+
+`url: "http://nikosdaniilidis/github.io/altblog"`
+
+In `_posts/some-post`
+
+`![blabbing physicist]({{ site.url }}/assets/2014-10-02-Life-in-vacuum/smbphysicist2.png)`
+
+`[pdf here]({{ site.url }}/assets/all-pdf/Daniilidis2014-surface-noise.pdf)`
+
+* Result (not working):
+
+==> `http://nikosdaniilidis/github.io/altblog/assets/all-pdf/Daniilidis2014-surface-noise.pdf`
+
+#### * Tested "case 1": 
+
+In `_config.yml`
+
+`baseurl: "/altblog"`
+
+`url: "http://nikosdaniilidis/github.io"`
+
+In `_posts/some-post`
+
+`![blabbing physicist]({{ site.baseurl }}/assets/2014-10-02-Life-in-vacuum/smbphysicist2.png)`
+
+`[pdf here]({{ site.baseurl }}/assets/all-pdf/Daniilidis2014-surface-noise.pdf)`
+
+* Result (not working):
+
+==> `http://nikosdaniilidis/github.io/assets/all-pdf/Daniilidis2014-surface-noise.pdf`
+
+#### * Tested "case 2": 
+
+In `_config.yml`
+
+`baseurl: "/altblog"`
+
+`url: "http://nikosdaniilidis/github.io"`
+
+In `_posts/some-post`
+
+`![blabbing physicist]({{ site.baseurl }}{{post.url}}/assets/2014-10-02-Life-in-vacuum/smbphysicist2.png)`
+
+`[pdf here]({{ site.baseurl }}{{post.url}}/assets/all-pdf/Daniilidis2014-surface-noise.pdf)`
+
+* Result (not working):
+
+==> `http://nikosdaniilidis/github.io/assets/all-pdf/Daniilidis2014-surface-noise.pdf`
 
 
