@@ -14,10 +14,22 @@ categories: jekyll update
 [pdf here]({{ site.url }}/assets/all-pdf/Daniilidis2014-surface-noise.pdf)
 
 * Tested:
-		baseurl: "/altblog" 
-		url: "http://nikosdaniilidis/github.io/altblog"
-		![blabbing physicist]({{ site.url }}/assets/2014-10-02-Life-in-vacuum/smbphysicist2.png)
-		[pdf here]({{ site.url }}/assets/all-pdf/Daniilidis2014-surface-noise.pdf)
-==>
+
+`baseurl: "/altblog"`
+`url: "http://nikosdaniilidis/github.io/altblog"`
+`![blabbing physicist]({{ site.url }}/assets/2014-10-02-Life-in-vacuum/smbphysicist2.png)`
+`[pdf here]({{ site.url }}/assets/all-pdf/Daniilidis2014-surface-noise.pdf)`
+
+==> `http://nikosdaniilidis/github.io/altblog/assets/all-pdf/Daniilidis2014-surface-noise.pdf`
+
+* Tested: 
+
+`baseurl: "/altblog"`
+`url: "http://nikosdaniilidis/github.io"`
+`![blabbing physicist]({{ site.baseurl }}/assets/2014-10-02-Life-in-vacuum/smbphysicist2.png)`
+`[pdf here]({{ site.baseurl }}/assets/all-pdf/Daniilidis2014-surface-noise.pdf)`
+
+==> 
+
 
 

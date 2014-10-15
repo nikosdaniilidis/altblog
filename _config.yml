@@ -4,15 +4,15 @@ lsi: false
 
 # Site settings
 title: Nikos Daniilidis
-email: nikos.daniilidis@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   A blog about science, technology, society, and everything in-between.
 
 baseurl: "/altblog" 
-url: "http://nikosdaniilidis/github.io/altblog"
+url: "http://nikosdaniilidis/github.io"
 
-twitter_username: ndaniilidis
 github_username:  nikosdaniilidis
+email: nikos.daniilidis@gmail.com
+twitter_username: ndaniilidis
 linked_in: https://www.linkedin.com/in/ndaniilidis
 
 # Build settings
