@@ -94,6 +94,8 @@ That's it!
 
 ### Broken links for `assets`
 
+Whenever I try to add a link to an image or pdf from my `assets` directory, it does not work.
+
 #### * Tested "base case":
 
 In `_config.yml`
