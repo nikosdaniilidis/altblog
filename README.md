@@ -96,13 +96,13 @@ That's it!
 
 Whenever I try to add a link to an image or pdf from my `assets` directory, it does not work.
 
-#### * Tested "base case":
+#### * Tested case 0:
 
 In `_config.yml`
 
 `baseurl: "/altblog"`
 
-`url: "http://nikosdaniilidis/github.io/altblog"`
+`url: "http://nikosdaniilidis.github.io/altblog"`
 
 In `_posts/some-post`
 
@@ -112,15 +112,15 @@ In `_posts/some-post`
 
 * Result (not working):
 
-==> `http://nikosdaniilidis/github.io/altblog/assets/all-pdf/Daniilidis2014-surface-noise.pdf`
+==> `http://nikosdaniilidis.github.io/altblog/assets/all-pdf/Daniilidis2014-surface-noise.pdf`
 
-#### * Tested "case 1": 
+#### * Tested case 1: 
 
 In `_config.yml`
 
 `baseurl: "/altblog"`
 
-`url: "http://nikosdaniilidis/github.io"`
+`url: "http://nikosdaniilidis.github.io"`
 
 In `_posts/some-post`
 
@@ -128,9 +128,9 @@ In `_posts/some-post`
 
 `[pdf here]({{ site.baseurl }}/assets/all-pdf/Daniilidis2014-surface-noise.pdf)`
 
-* Result (not working):
+* Result (works!):
 
-==> `http://nikosdaniilidis/github.io/assets/all-pdf/Daniilidis2014-surface-noise.pdf`
+==> `http://nikosdaniilidis.github.io/altblog/assets/all-pdf/Daniilidis2014-surface-noise.pdf`
 
 #### * Tested "case 2": 
 
