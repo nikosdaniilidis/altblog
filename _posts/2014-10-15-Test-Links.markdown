@@ -47,9 +47,9 @@ In `_posts/some-post`
 
 `[pdf here]({{ site.baseurl }}/assets/all-pdf/Daniilidis2014-surface-noise.pdf)`
 
-* Result (not working):
+* Result (works!):
 
-==> `http://nikosdaniilidis.github.io/assets/all-pdf/Daniilidis2014-surface-noise.pdf`
+==> `http://nikosdaniilidis.github.io/altblog/assets/all-pdf/Daniilidis2014-surface-noise.pdf`
 
 #### * Tested "case 2": 
 
