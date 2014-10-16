@@ -8,7 +8,7 @@ description: > # this means to ignore newlines until "baseurl:"
   A blog about science, technology, society, and everything in-between.
 
 baseurl: "/altblog" 
-url: "http://nikosdaniilidis/github.io"
+url: "http://nikosdaniilidis.github.io"
 
 github_username:  nikosdaniilidis
 email: nikos.daniilidis@gmail.com
