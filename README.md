@@ -1,3 +1,9 @@
+#  Feature branch: links to page in `assets` not working.
+
+I am setting up a github project pages blog using jekyll, and the links to my assets files do not work properly. When trying to add an image to my post the image does not show. When I try to link to a pdf for download I get a dead link (as in `http://nikosdaniilidis/github.io/assets/all-pdf/Daniilidis2014-surface-noise.pdf`). Please have a look a the copde to tell me what I'm doing wrong. 
+
+Below is a description of what I have done to get to this point. Of parrticular interest is the last section on broken links for `assets`.
+
 ##  This the repository for my blog.
 
 I will use the README to give an outline of how to arrive at a result similar to mine. 
